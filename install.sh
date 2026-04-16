@@ -84,7 +84,7 @@ echo -e "${GREEN}✔ Все системные зависимости устан
 
 echo -e "\n${CYAN}Шаг 2: Клонирование репозитория...${NC}"
 if [ ! -d "$PROJECT_DIR" ]; then
-    git clone $REPO_URL
+    git clone https://github.com/Buyretta/41.git
 fi
 cd $PROJECT_DIR
 echo -e "${GREEN}✔ Репозиторий готов.${NC}"
