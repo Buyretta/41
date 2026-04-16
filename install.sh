@@ -20,7 +20,7 @@ read_input_yn() {
 }
 
 REPO_URL="https://github.com/Buyretta/41.git"
-PROJECT_DIR="3xui-shopbot"
+PROJECT_DIR="3xuishop"
 NGINX_CONF_FILE="/etc/nginx/sites-available/${PROJECT_DIR}.conf"
 
 echo -e "${GREEN}--- Запуск скрипта установки/обновления 3xui-ShopBot ---${NC}"
@@ -84,7 +84,7 @@ echo -e "${GREEN}✔ Все системные зависимости устан
 
 echo -e "\n${CYAN}Шаг 2: Клонирование репозитория...${NC}"
 if [ ! -d "$PROJECT_DIR" ]; then
-    git clone https://github.com/Buyretta/41.git
+    git clone @REPO_URL
 fi
 cd $PROJECT_DIR
 echo -e "${GREEN}✔ Репозиторий готов.${NC}"
